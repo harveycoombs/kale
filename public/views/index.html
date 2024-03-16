@@ -12,7 +12,19 @@
 
     <body>
         <main>
-            
+            <section class="header">
+                <h1>Introducing <img src="/assets/branding/kale-logo.png" alt="Kale Logo" draggable="false" /></h1>
+                <h2>an easy-to-use blockchain explorer</h2>
+                <div class="global-search-container"><input type="text" placeholder="Find Transactions, Addresses etc." id="global_search_field" /><button class="button" id="submit_search_btn">Search</button></div>
+            </section><section class="panels-container">
+                <div class="panel">
+                    <div class="panel-header"><span>TRANSACTIONS</span><div class="panel-menu-container"></div></div><div class="panel-content"><table id="transaction_log"></table></div>
+                </div><div class="panel">
+                    <div class="panel-header"><span>BLOCKS</span><div class="panel-menu-container"></div></div><div class="panel-content"><div id="block_data"></div></div>
+                </div><div class="panel">
+                    <div class="panel-header"><span>PRICE</span><div class="panel-menu-container"></div></div><div class="panel-content"><div id="price_data"></div></div>
+                </div>
+            </section>
         </main><footer></footer>
     </body>
 </html>
