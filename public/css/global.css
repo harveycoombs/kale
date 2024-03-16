@@ -1,0 +1,115 @@
+@import url('header.css');
+@import url('footer.css');
+
+@font-face {
+    font-family: 'Epilogue';
+    src: url('/assets/fonts/Epilogue-Light.woff') format('woff');
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: 'Epilogue';
+    src: url('/assets/fonts/Epilogue-Regular.woff') format('woff');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Epilogue';
+    src: url('/assets/fonts/Epilogue-Medium.woff') format('woff');
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'Epilogue';
+    src: url('/assets/fonts/Epilogue-SemiBold.woff') format('woff');
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: 'Epilogue';
+    src: url('/assets/fonts/Epilogue-Bold.woff') format('woff');
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'Epilogue';
+    src: url('/assets/fonts/Epilogue-ExtraBold.woff') format('woff');
+    font-weight: 900;
+}
+
+:root {
+    --background-color: #FFF;
+    --heading-color: #1A2B3E;
+    --text-color: #ADB5BD;
+    --panel-color: #EFF0F2;
+    --accent-color: #45CB85;
+    --alt-accent-color: rgba(69, 203, 133, 0.25);
+}
+
+* {
+    box-sizing: border-box;
+}
+z
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font: 14px 'Epilogue', sans-serif;
+}
+
+body, h1, h2, h3, 
+h4, h5, h6, p {
+    margin: 0;
+}
+
+.sb-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.button, .field {
+    padding: 8px 16px;
+    border: 1px solid;
+    border-radius: 50px;
+    font: .9em 'Epilogue', sans-serif;
+    transition: 80ms;
+}
+
+.button {
+    background-color: var(--accent-color);
+    border-color: var(--accent-color);
+    color: var(--background-color);
+    font-weight: 500;    
+    text-align: center;
+    cursor: pointer;
+} .button:hover {
+    background-color: #7209B7;
+    border-color: #7209B7;
+} .button:active {
+    background-color: #7209B7;
+    border-color: #7209B7;
+}
+
+.button.alt {
+    background-color: var(--alt-accent-color);
+    border-color: var(--alt-accent-color);
+} .button.alt:hover {
+    background-color: #E3CEF1;
+    border-color: #E3CEF1;
+} .button.alt:active {
+    background-color: #E3CEF1;
+    border-color: #E3CEF1;
+}
+
+.field {
+    background-color: transparent;
+    border-color: var(--text-color);
+    color: var(--heading-color);
+} .field:focus {
+    outline: none;
+    border-color: var(--accent-color);
+}
+
+.field::placeholder {
+    color: var(--text-color);
+}
