@@ -1,5 +1,5 @@
 /*
-    Kale ~ https://kale.harveycoombs.com/
+    Kale ~ https://looker.fi/
     Copyright (c) 2024 Harvey Coombs
 */
 const express = require("express");
@@ -20,7 +20,7 @@ app.all("/api*", upload.array("files"), Routes.API);
 app.get("/", Routes.index);
 
 app.listen(3004, () => {
-    console.log(`Kale\nhttps://kale.harveycoombs.com/\nONLINE`);
+    console.log(`Looker\nhttps://looker.fi/\nONLINE`);
 
     app.use("/css", express.static("./public/css"));
     app.use("/js", express.static("./public/js"));
