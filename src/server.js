@@ -3,20 +3,15 @@
     Copyright (c) 2024 Harvey Coombs
 */
 const express = require("express");
-const cookieParser = require("cookie-parser");
-const multer = require("multer");
 
 const { Routes } = require("./routes.js");
-const { JWT } = require("./jwt.js");
 
 const app = express();
-const upload = multer({ dest: "./public/content/temp/" });
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
-app.use(cookieParser());
 
-app.all("/api*", upload.array("files"), Routes.API);
+app.all("/api*", Routes.API);
 app.get("/", Routes.index);
 
 app.listen(3004, () => {

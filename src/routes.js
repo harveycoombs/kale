@@ -1,10 +1,9 @@
 const fs = require("fs");
 
 const { Tools } = require("./tools.js");
-const { JWT } = require("./jwt.js");
 
-const headerContent = fs.readFileSync("./public/views/shared/header.html", { encoding: "utf8" }),
-      footerContent = fs.readFileSync("./public/views/shared/footer.html", { encoding: "utf8" });
+//const headerContent = fs.readFileSync("./public/views/shared/header.html", { encoding: "utf8" }),
+//      footerContent = fs.readFileSync("./public/views/shared/footer.html", { encoding: "utf8" });
 
 class Routes {
     static API(request, response) {
@@ -34,8 +33,8 @@ class Routes {
         fs.readFile("./public/views/index.html", { encoding: "utf8" }, async (ex, content) => {
             if (ex) return;
 
-            content = content.replace("{{header}}", headerContent);
-            content = content.replace("{{footer}}", footerContent);
+            //content = content.replace("{{header}}", headerContent);
+            //content = content.replace("{{footer}}", footerContent);
 
             response.setHeader("Content-Type", "text/html");
             response.setHeader("Access-Control-Allow-Origin", "*");
