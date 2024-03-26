@@ -64,9 +64,9 @@ a {
 }
 
 .button, .field {
-    padding: 10px 12px;
+    padding: 10px 14px;
     border: 1px solid;
-    border-radius: 6px;
+    border-radius: 8px;
     font-family: 'Space Grotesk', sans-serif;
     transition: 80ms;
 }
@@ -83,22 +83,22 @@ a {
     text-align: center;
     cursor: pointer;
 } .button:hover {
-    background-color: #7209B7;
-    border-color: #7209B7;
+    background-color: #E75A7C;
+    border-color: #E75A7C;
 } .button:active {
-    background-color: #7209B7;
-    border-color: #7209B7;
+    background-color: #E75A7C;
+    border-color: #E75A7C;
 }
 
 .button.alt {
     background-color: var(--alt-accent-color);
     border-color: var(--alt-accent-color);
 } .button.alt:hover {
-    background-color: #E3CEF1;
-    border-color: #E3CEF1;
+    background-color: #2F3441;
+    border-color: #2F3441;
 } .button.alt:active {
-    background-color: #E3CEF1;
-    border-color: #E3CEF1;
+    background-color: #2F3441;
+    border-color: #2F3441;
 }
 
 .field {
@@ -127,6 +127,10 @@ a {
     border: none;
     font: 1em 'Space Grotesk';
     color: #FFF;
+}
+
+.field.wrapper .button {
+    border-radius: 4px;
 }
 
 .global-container {
